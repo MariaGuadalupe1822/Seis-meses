@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Meses - Aria de Amor</title>
+    <style>
+        body {
+            background: #1a1a2e url('https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .curtain {
+            position: fixed;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+            background: #8B0000;
+            z-index: -1;
+        }
+
+        .curtain-left {
+            left: 0;
+            box-shadow: 10px 0 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .curtain-right {
+            right: 0;
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+            font-weight: 700;
+            color: #FFD700;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #FFD700;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .month-card {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .month-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .month-title {
+            font-size: 1.8rem;
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .memory {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .photo-frame {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #FFD700;
+            border-radius: 50%;
+            margin: 20px auto;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin: 30px 0;
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #FFD700;
+            margin-top: 50px;
+        }
+
+        .music-note {
+            position: absolute;
+            color: rgba(255, 215, 0, 0.5);
+            font-size: 1.5rem;
+            animation: floatNote 5s infinite linear;
+        }
+
+        @keyframes floatNote {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Efecto de teatro */
+        .stage {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, transparent, #000);
+            z-index: 2;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="curtain curtain-left"></div>
+    <div class="curtain curtain-right"></div>
+
+    <div class="container">
+        <h1>6 Meses</h1>
+        <h2>"Nessun Dorma" de Nuestro Amor</h2>
+
+        <div class="quote">
+            <i class="fas fa-quote-left"></i> La música es el amor buscando palabras <i class="fas fa-quote-right"></i>
+            <div>- Luciano Pavarotti</div>
+        </div>
+
+        <!-- Mes 1 -->
+        <div class="month-card">
+            <div class="month-title">Acto I: Gracias por estos meses juntos mi cielito</div>
+            <div class="photo-frame">
+                <img src="1.png" alt="Gracias por estos meses juntos mi cielito">
+            </div>
+            <div class="memory">
+                Como el aria "Una furtiva lagrima", nuestros primeros momentos estaban llenos de emociones secretas y miradas que decían más que mil palabras.
+            </div>
+        </div>
+
+        <!-- Mes 2 -->
+        <div class="month-card">
+            <div class="month-title">Acto I: Gracias por siempre estar a mi lado, te quiero para siempree</div>
+            <div class="photo-frame">
+                <img src="imagen 2.png" alt="Gracias por siempre estar a mi lado, te quiero para siempre">
+            </div>
+            <div class="memory">
+                Nuestro amor comenzó a florecer como "La donna è mobile", lleno de alegría y sorpresas que hicieron latir más fuerte mi corazón.
+            </div>
+        </div>
+
+        <!-- Añade los otros 4 meses con la misma estructura -->
+
+        <!-- Mes 6 -->
+        <div class="month-card">
+            <div class="month-title">Por mas meses juntos</div>
+            <div class="photo-frame">
+                <img src="imagen3.png" alt="Mes 6">
+            </div>
+            <div class="memory">
+                Hoy, como el "Nessun Dorma" de Turandot, nuestro amor se alza triunfante. Nadie dormirá esta noche celebrando nuestra pasión.
+            </div>
+        </div>
+
+        <div class="quote">
+            <i class="fas fa-quote-left"></i> El amor es como una gran ópera: requiere práctica, dedicación y mucha pasión <i class="fas fa-quote-right"></i>
+        </div>
+
+        <div class="signature">
+            Con amor, para ti mi Santos, TE AMA: TU LUPITA
+        </div>
+    </div>
+
+    <div class="stage"></div>
+
+    <script>
+        // Crear notas musicales flotantes
+        function createMusicNotes() {
+            const notes = ['♩', '♪', '♫', '♬', '♭', '♮'];
+            const colors = ['#FFD700', '#FFA500', '#FFFFFF', '#FF6347'];
+            
+            setInterval(() => {
+                const note = document.createElement('div');
+                note.className = 'music-note';
+                note.textContent = notes[Math.floor(Math.random() * notes.length)];
+                note.style.left = Math.random() * 100 + 'vw';
+                note.style.color = colors[Math.floor(Math.random() * colors.length)];
+                note.style.animationDuration = (3 + Math.random() * 7) + 's';
+                
+                document.body.appendChild(note);
+                
+                // Eliminar la nota después de la animación
+                setTimeout(() => {
+                    note.remove();
+                }, 10000);
+            }, 800);
+        }
+
+        // Reproducir música al hacer clic (opcional)
+        document.body.addEventListener('click', () => {
+            const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+            audio.volume = 0.3;
+            audio.play().catch(e => console.log("Auto-play bloqueado"));
+        });
+
+        createMusicNotes();
+    </script>
+</body>
+</html>
